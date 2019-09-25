@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'userSite',
 ]
 
-AUTH_USER_MODEL = 'users.CustomUser'
+AUTH_USER_MODEL = 'users.CustomUser' # CustomUser inheritance from AbstractUser
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -83,10 +83,10 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'djangoEmail',
+        'ENGINE': 'django.db.backends.mysql', # I am use mysql
+        'NAME': 'djangoEmail', 
         'USERNAME': 'root',
-        'PASSWORD': 'toor',
+        'PASSWORD': '', 
     }
 }
 

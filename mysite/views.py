@@ -4,8 +4,8 @@ from django.contrib.auth.models import Group
 from django.contrib.auth import authenticate, login, logout
 from userSite.forms import FormLogin, FormRegister
 from django.core.mail import send_mail
-from userSite import token
-from users.models import CustomUser as User
+from userSite import token # for generate Token Activation or Url Activation
+from users.models import CustomUser as User # CustomUser for create new user, 2 new field : token, activation
 
 class Index(View):
     # print(dir(models))
